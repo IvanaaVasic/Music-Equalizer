@@ -1,0 +1,41 @@
+.holder {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30%;
+  align-items: center;
+}
+.bottom-lined {
+  align-items: flex-end;
+}
+.bars {
+  background-color: black;
+  width: 12px;
+  height: 80px;
+  float: left;
+  margin-right: 10px;
+  transition: all 0.2s linear;
+}
+.myBtn {
+  background-color: black;
+  border-radius: 28px;
+  border: 1px solid black;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 17px;
+  color: white;
+  padding: 16px 31px;
+  text-decoration: none;
+  position: relative;
+  outline: none;
+}
+.myBtn:hover {
+  background-color: rgb(27, 26, 26);
+  opacity: 0.7;
+}
+.myBtn:active {
+  position: relative;
+  top: 1px;
+}
