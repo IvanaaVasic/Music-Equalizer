@@ -1,0 +1,54 @@
+$color3: #24292e
+* 
+
+
+  &.button
+  position: relative
+  padding: 1em 1.5em
+  border: none
+  background-color: transparent
+  cursor: pointer
+  outline: none
+  font-size: 18px
+  
+
+  &.type3
+    color: $color3
+    
+    //Effect three
+    // Effect one
+    &.type3::after,
+    &.type3::before
+      content: ''
+      display: block
+      position: absolute
+      width: 20%
+      height: 20%
+      border: 2px solid
+      transition: all 0.6s ease
+      border-radius: 2px
+
+    &.type3::after
+      bottom: 0
+      right: 0
+      border-top-color: transparent
+      border-left-color: transparent
+      border-bottom-color: $color3
+      border-right-color: $color3
+
+    &.type3::before
+      top: 0
+      left: 0
+      border-bottom-color: transparent
+      border-right-color: transparent
+      border-top-color: $color3
+      border-left-color: $color3
+
+    &.type3:hover:after,
+    &.type3:hover:before
+      border-bottom-color: $color3
+      border-right-color: $color3
+      border-top-color: $color3
+      border-left-color: $color3
+      width: 100%
+      height: 100%

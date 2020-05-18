@@ -2,12 +2,20 @@
   <head>
     <title>Music Equalizer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="stylesheet" type="text/css" href="new.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
   <body>
-    <input type="button" onclick="changeB()" class="myBtn" value="Bottom-Lined equalizer" />
-    <input type="button" onclick="changeC()" class="myBtn" value="Center equalizer" />
+    <div class="button-holder">
+      <button class="button type3" onclick="changeB()">
+        BOTTOM-LINED EQUALIZER
+      </button>
+
+      <button class="button type3" onclick="changeC()">
+        CENTER EQUALIZER
+      </button>
+    </div>
 
     <div class="holder">
       <div class="bars"></div>
