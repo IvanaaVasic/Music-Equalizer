@@ -21,3 +21,9 @@
   display: flex;
   flex-direction: row;
 }
+
+@media only screen and (max-width: 449px) {
+  .button-holder {
+    flex-direction: column;
+  }
+}
